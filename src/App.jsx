@@ -7,13 +7,21 @@ import Portfolio from "./components/Portfolio/Portfolio";
 import Contact from "./components/contact/Contact";
 import Footer from "./components/footer/Footer";
 import ScrollUp from "./components/scrollup/ScrollUp";
+import { useEffect, useState } from "react"
 
 const App = () => {
+  const [isScrollingUp, setIsScrollingUp] = useState(false);
+
+  useEffect(()=>{
+    scrollTo(0,0)
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    setIsScrollingUp(scrollTop > 0); // Check if scrolled to top
+  },[])
   return (
     <>  
       <Header />
       <main className="main">
-        <Home exact=  {Home} />
+        <Home  />
         <About />
         <Skills />
         <Portfolio />
