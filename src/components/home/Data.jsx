@@ -20,7 +20,7 @@ const Data = () => {
             "Highly Interested In Tech",
           ]}
           typeSpeed={60}
-          backSpeed={50}
+          backSpeed={80}
           loop={true}
         />
       </h3>
