@@ -9,6 +9,11 @@ import mongo from './img/mongo.png'
 import tailwind from './img/tailwind.png'
 import mui from './img/mui.png'
 import sanity from './img/sanity.png'
+import ts from './img/ts.png'
+import strapi from './img/strapi.jpg'
+import insomnia from './img/insomnia.png'
+
+
 
 
 export const Images = [
@@ -39,7 +44,7 @@ export const Images = [
   
     {
       id: 7,
-      img: mui,
+      img: ts,
     },
     {
       id: 8,
@@ -52,5 +57,17 @@ export const Images = [
     {
       id: 10,
       img: sanity,
+    },
+    {
+      id: 11,
+      img: strapi,
+    },
+    {
+      id: 12,
+      img: insomnia,
+    },
+    {
+      id: 13,
+      img: mui,
     },
   ];
