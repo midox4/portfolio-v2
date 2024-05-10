@@ -12,6 +12,8 @@ import sanity from './img/sanity.png'
 import ts from './img/ts.png'
 import strapi from './img/strapi.jpg'
 import insomnia from './img/insomnia.png'
+import sentry from './img/sentry.svg'
+
 
 
 
@@ -69,5 +71,9 @@ export const Images = [
     {
       id: 13,
       img: mui,
+    },
+    {
+      id: 14,
+      img: sentry,
     },
   ];
