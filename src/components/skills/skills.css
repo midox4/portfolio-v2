@@ -11,4 +11,11 @@
 .grid-item img {
   width: 100%;
   height: auto;
+} 
+
+@media screen and (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Adjust the minmax value for smaller screens */
+    gap: 20px;
+  }
 }

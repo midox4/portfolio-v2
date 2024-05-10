@@ -100,7 +100,7 @@ const Portfolio = () => {
       >
         <div className="talk_left">
           <h3>
-            So Let's Talk About <br /> <span>Your next projects</span>
+            So Lets Talk About <br /> <span>Your next projects</span>
           </h3>
         </div>
         <motion.div
