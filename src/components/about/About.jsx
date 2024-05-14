@@ -1,11 +1,10 @@
 import "./about.css";
 import AboutImg from "../../assets/aboutme.jpg";
-import CV from "../../assets/mycvsoon.pdf";
+import CV from "../../assets/cvpdfdev.pdf";
 import Info from "./Info";
 import { motion } from "framer-motion";
 
 const About = () => {
-
   return (
     <section className="about section" id="about">
       <h2 className="section__title">Get To Know </h2>
@@ -18,15 +17,16 @@ const About = () => {
           className="about__img object-cover  object-center h-full w-full rounded-full max-w-xs transition duration-300 ease-in-out 
            hover:scale-90 hover:opacity-75 cursor-pointer shadow-2xl"
         /> */}
-        <motion.div whileHover={{ scale: 1.1 }}
-         animate={{ opacity: 1 }}
-         transition={{ duration: 0.3 }}>
+        <motion.div
+          whileHover={{ scale: 1.1 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.3 }}
+        >
           <motion.img
             src={AboutImg}
             alt="Portfolio Item"
             className="about__img"
           />
-         
         </motion.div>
 
         <div className="about__data">
@@ -35,7 +35,12 @@ const About = () => {
             I design and code beautifully simple things, and i love what i do.
             Excited to collaborate on new projects!{" "}
           </p>
-          <a download="" href={CV} className="button button--flex">
+          <a
+            href={CV}
+            target="_blank"
+            rel="noopener noreferrer "
+            className="button button--flex"
+          >
             Download CV
             <svg
               className="button__icon"
