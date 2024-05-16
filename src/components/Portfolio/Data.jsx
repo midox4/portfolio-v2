@@ -1,6 +1,6 @@
 
 
-import work1 from "../../assets/work11.png";
+import work1 from "../../assets/youtube.jpeg";
 import work2 from "../../assets/work2.png";
 import work3 from "../../assets/work3.png";
 import work4 from "../../assets/work4.png";
@@ -13,8 +13,8 @@ export const workImages = [
       img: work1,
       name: "project 1",
       category: "web",
-      git: "https://github.com/midox4",
-      demo: "https://pandora-web.netlify.app/",
+      git: "https://github.com/midox4/youtubeclone",
+      demo: "https://youtubeclone-uk5i.onrender.com/",
     },
     {
       id: 2,
