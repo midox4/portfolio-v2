@@ -10,10 +10,17 @@
     border-radius: 100%;
     justify-content: right;
 }
+.about__img :hover{
+    transform: scale(1.1);
+    transition: 0.3s ease-in-out;
+    border: 1px solid rgba(0, 0, 0, 12);
+    cursor: pointer;
+
+}
 
 .about__info {
-    grid-template-columns: repeat(3, 140px);
-    gap: 0.5rem;
+    grid-template-columns: repeat(3, 190px);
+    gap: 0.7em;
     margin-bottom: var(--mb-2);
 }
 

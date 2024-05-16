@@ -34,6 +34,8 @@ export const workImages = [
       name: "project 4",
       category: "app",
       git: "https://github.com/midox4",
+      demo: "https://youtubeclone-uk5i.onrender.com/",
+
     },
     {
       id: 4,
@@ -43,6 +45,8 @@ export const workImages = [
   
       category: "app",
       git: "https://github.com/midox4",
+      demo: "https://youtubeclone-uk5i.onrender.com/",
+
     },
     {
       id: 5,
@@ -52,6 +56,8 @@ export const workImages = [
       name: "project 6",
       category: "design",
       git: "https://github.com/midox4",
+      demo: "https://youtubeclone-uk5i.onrender.com/",
+
     },
     {
       id: 6,
@@ -61,6 +67,8 @@ export const workImages = [
       name: "project 6",
       category: "design",
       git: "https://github.com/midox4",
+      demo: "https://youtubeclone-uk5i.onrender.com/",
+
     },
   ];
   

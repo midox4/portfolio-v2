@@ -140,6 +140,7 @@ const Portfolio = () => {
   const [tab, setTab] = useState({ name: "all" });
   const [works, setWorks] = useState([]);
   const [active, setActive] = useState(0);
+  const [isGithubVisible, setIsGithubVisible] = useState(false);
 
   useEffect(() => {
     if (tab.name === "all") {
@@ -156,6 +157,8 @@ const Portfolio = () => {
     setTab({ name: e.target.textContent.toLowerCase() });
     setActive(index);
   };
+
+ 
 
   return (
     <div className="container" id="portfolio">
@@ -185,6 +188,8 @@ const Portfolio = () => {
         })}
       </motion.div>
 
+    
+
       {/* Image gallery */}
       <motion.div
         initial={{ x: 0, opacity: 0 }}
@@ -208,7 +213,9 @@ const Portfolio = () => {
                   whileHover={{ scale: [1, 1.1] }}
                   transition={{ duration: 0.3 }}
                   href={work.git}
-                  target="_blank" rel="noopener noreferrer"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`${isGithubVisible ? '' : 'hidden-svg disabled-link'}`}
                 >
                   <FiGithub />
                 </motion.a>
@@ -218,7 +225,8 @@ const Portfolio = () => {
                   whileInView={{ scale: [0, 1] }}
                   whileHover={{ scale: [1, 1.1] }}
                   transition={{ duration: 0.3 }}
-                  target="_blank" rel="noopener noreferrer"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <FiEye />
                 </motion.a>
