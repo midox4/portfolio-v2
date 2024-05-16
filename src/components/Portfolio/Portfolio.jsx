@@ -25,6 +25,21 @@ const Portfolio = () => {
     setTab({ name: e.target.textContent.toLowerCase() });
     setActive(index);
   };
+// link to specified tab
+  document.addEventListener('DOMContentLoaded', function() {
+    if (window.innerWidth <= 600) {
+      const workImages = document.querySelectorAll('.workImage');
+  
+      workImages.forEach(workImage => {
+        const githubLink = workImage.dataset.github;
+        if (githubLink) {
+          workImage.addEventListener('click', function() {
+            window.location.href = githubLink;
+          });
+        }
+      });
+    }
+  });
 
   return (
     <div className="container" id="portfolio">
@@ -53,45 +68,56 @@ const Portfolio = () => {
           );
         })}
       </motion.div>
-      <motion.div
-        initial={{ x: 0, opacity: 0 }}
-        whileInView={{ x: [-250, 0], opacity: 1 }}
-        transition={{ duration: 1 }}
-        exit={{ opacity: 0, y: -50 }}
-        className="workImages"
-      >
-        {works.map((work) => {
-          return (
-            <div className="workImage" key={work.id}>
-              <img src={work.img} alt="workImg" />
-              <motion.div
-                initial={{ opacity: 0 }}
-                whileHover={{ opacity: [0, 1] }}
-                transition={{ duration: 0.3, ease: "easeInOut" }}
-                className="hoverLayer"
-              >
-                <motion.a
-                  whileInView={{ scale: [0, 1] }}
-                  whileHover={{ scale: [1, 1.1] }}
-                  transition={{ duration: 0.3 }}
-                  href={`${work.git}`}
-                >
-                  <FiGithub />
-                </motion.a>
+{/* /* images jobs * */ }
 
-                <motion.a
-                  href={`${work.demo}`}
-                  whileInView={{ scale: [0, 1] }}
-                  whileHover={{ scale: [1, 1.1] }}
-                  transition={{ duration: 0.3 }}
-                >
-                  <FiEye />
-                </motion.a>
-              </motion.div>
-            </div>
-          );
-        })}
-      </motion.div>
+<motion.div
+  initial={{ x: 0, opacity: 0 }}
+  whileInView={{ x: [-250, 0], opacity: 1 }}
+  transition={{ duration: 1 }}
+  exit={{ opacity: 0, y: -50 }}
+  className="workImages"
+>
+  {works.map((work) => {
+    return (
+      <div className="workImage" key={work.id} data-github={work.git}>
+        <img src={work.img} alt="workImg" />
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileHover={{ opacity: [0, 1] }}
+          transition={{ duration: 0.3, ease: "easeInOut" }}
+          className="hoverLayer"
+        >
+          <motion.a
+            whileInView={{ scale: [0, 1] }}
+            whileHover={{ scale: [1, 1.1] }}
+            transition={{ duration: 0.3 }}
+            href={`${work.git}`}
+          >
+            <FiGithub />
+          </motion.a>
+
+          <motion.a
+            href={`${work.demo}`}
+            whileInView={{ scale: [0, 1] }}
+            whileHover={{ scale: [1, 1.1] }}
+            transition={{ duration: 0.3 }}
+          >
+            <FiEye />
+          </motion.a>
+        </motion.div>
+      </div>
+    );
+  })}
+</motion.div>
+
+
+      {/* /* images jobs * */ }
+
+
+
+
+
+
       <motion.div
         initial={{ x: 0, opacity: 0 }}
         whileInView={{ x: [250, 0], opacity: 1 }}
