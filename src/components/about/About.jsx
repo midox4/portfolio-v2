@@ -1,6 +1,6 @@
 import "./about.css";
 import AboutImg from "../../assets/aboutme.jpg";
-import CV from "../../assets/cvpdfdev.pdf";
+import CV from "../../assets/Hafsi-Ahmed.pdf";
 import Info from "./Info";
 import { motion } from "framer-motion";
 
