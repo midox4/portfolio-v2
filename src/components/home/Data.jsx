@@ -16,7 +16,7 @@ const Data = () => {
         <ReactTyped
           strings={[
             "Full-Stack Web Developer",
-            "Based On New Brunswick",
+            "Based On Québec City",
             "Highly Interested In Tech",
           ]}
           typeSpeed={60}
