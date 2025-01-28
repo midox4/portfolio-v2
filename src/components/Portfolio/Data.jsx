@@ -34,7 +34,7 @@ export const workImages = [
       name: "project 4",
       category: "app",
       git: "https://github.com/midox4",
-      demo: "https://youtubeclone-uk5i.onrender.com/",
+      demo: "https://movieapp-wizr.onrender.com",
 
     },
     {
