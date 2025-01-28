@@ -33,7 +33,7 @@ export const workImages = [
   
       name: "project 4",
       category: "app",
-      git: "https://github.com/midox4",
+      git: "https://github.com/midox4/movieapp",
       demo: "https://movieapp-wizr.onrender.com",
 
     },
